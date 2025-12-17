@@ -8,14 +8,19 @@ crossorigin="anonymous">
 <?php wp_footer() ?>
 <footer>
     <div class ="footer_section">
-    2025 goldframe@gmail.com. Все права защищены.
-    </div>
-    <a href="<?php echo home_url(); ?>" class = "home_link">Главная</a>
+        <div class = "rights">
+            2025 goldframe@gmail.com. Все права защищены.
+        </div>
+        <div class = "footer_nav">
+        <a href="<?php echo home_url(); ?>" class = "home_link">Главная</a>
 
-    <?php wp_nav_menu(array(
-        'theme_locations' => 'header-menu',
-        'menu_class' => 'footer_nav',
-    )) ?>
+        <?php wp_nav_menu(array(
+            'theme_locations' => 'header-menu',
+            'menu_class' => 'footer_nav',
+        )) ?>
+        </div>
+    
+    </div>
 </footer>
 </body>
 </html>
